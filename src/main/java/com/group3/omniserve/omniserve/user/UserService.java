@@ -54,6 +54,25 @@ public class UserService {
         }
     }
 
+
+    // updateUser updates the user in the db
+    public ResponseEntity<User> updateUser(@PathVariable("id") long id,User user) {
+        Optional<User> userOpt =  userRepository.findById(id);
+
+        if (userOpt.isPresent()) {
+            User u = userOpt.get();
+            u.setFirstName(u.getFirstName());
+            u.setLastName(u.getLastName());
+            u.setEmail(u.getEmail());
+            u.setUpdateTimestamp(u.getUpdateTimestamp());
+
+            return new ResponseEntity<User>(userRepository.save(u), null, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+    // deleteUser removes a specified user from the db
     public ResponseEntity<HttpStatus> deleteUser(@PathVariable("id") long id) {
         try {
           userRepository.deleteById(id);
