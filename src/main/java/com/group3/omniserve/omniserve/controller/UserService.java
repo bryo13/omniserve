@@ -1,4 +1,4 @@
-package com.group3.omniserve.omniserve.user;
+package com.group3.omniserve.omniserve.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +10,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+
+import com.group3.omniserve.omniserve.models.User;
+import com.group3.omniserve.omniserve.repositories.UserRepository;
 
 @Service
 public class UserService {

@@ -1,4 +1,4 @@
-package com.group3.omniserve.omniserve.user;
+package com.group3.omniserve.omniserve.controller;
 
 import java.util.List;
 
@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.group3.omniserve.omniserve.models.User;
 
 @RestController
 @RequestMapping("/api/v1")

@@ -1,4 +1,4 @@
-package com.group3.omniserve.omniserve.user;
+package com.group3.omniserve.omniserve.models;
 
 import java.sql.Timestamp;
 
@@ -48,7 +48,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(updatable = false, nullable = false)
-    private Long id;
+    private Long userId;
 
     private String firstName;
 
