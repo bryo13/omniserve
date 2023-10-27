@@ -19,6 +19,8 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
+   
+
     // getAllUsers returns all users in the omniserve db
     public ResponseEntity<List<User>> getAllUsers() {
         try {
@@ -34,7 +36,6 @@ public class UserService {
             return new ResponseEntity<List<User>>(null, null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-
     // get user by ID
     @GetMapping("/users/{id}")
     public ResponseEntity<User> getUserById(@PathVariable("id") long id) {

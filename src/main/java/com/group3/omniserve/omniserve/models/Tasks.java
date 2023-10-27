@@ -28,10 +28,12 @@ public class Tasks {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(updatable = false, nullable = false)
+    @Column(updatable = false, nullable = false, name = "task_id")
     private long taskID;
     private String title;
     private String description;
+
+    @Column(name = "additional_files")
     private String additionalFiles;
 
     // FetchType set to lazy for performance purposes
@@ -46,7 +48,7 @@ public class Tasks {
      * or to sort/order by multiple fields:
      */
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "users_id", nullable = false)
+    @JoinColumn(name = "user_id", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
     private User user;

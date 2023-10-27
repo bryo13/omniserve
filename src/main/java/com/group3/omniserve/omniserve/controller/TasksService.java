@@ -21,13 +21,13 @@ public class TasksService {
     @Autowired
     private TasksRepository tasksRepository;
 
-    public ResponseEntity<List<Tasks>> getAllTaskByUserID(@PathVariable(value = "UserID") Long userID) {
-        if (!userRepository.existsById(userID)) {
+    public ResponseEntity<List<Tasks>> getAllTaskByUserID(@PathVariable(value = "user_id") Long user_id) {
+        if (!userRepository.existsById(user_id)) {
             return new ResponseEntity<List<Tasks>>(null, null, HttpStatus.NOT_FOUND);
         }
       
           List<Tasks> tasks = new ArrayList<>();
-          tasksRepository.findAll().forEach(tasks::add);
+          tasksRepository.findAllTasksByUser(user_id);
           
           return new ResponseEntity<>(tasks, HttpStatus.OK);
         

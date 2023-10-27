@@ -18,8 +18,8 @@ public class TasksController {
     @Autowired
     private TasksService tasksService;
 
-    @GetMapping("/users/{userID}/tasks")
-    public ResponseEntity<List<Tasks>> getAllTaskByUserID(@PathVariable(value = "UserID") Long userID) {
-        return tasksService.getAllTaskByUserID(userID);
+    @GetMapping("/users/{user_id}/tasks")
+    public ResponseEntity<List<Tasks>> getAllTaskByUserID(@PathVariable(value = "user_id") Long user_id) {
+        return tasksService.getAllTaskByUserID(user_id);
     }
 }
