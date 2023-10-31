@@ -7,7 +7,8 @@ with the required credentials to the local postgresql instance.
 -> All dependencies are help in the POM.xml file in the root directory.  
 -> The application is a REST API following the MVC architecture written in spring boot version 3.1.4  
 -> If not used to maven and spring boot project file structure please use the `tree` command  
- in unix and unix-like systems or the alt. in Windows and Mac.
+ in unix and unix-like systems or the alt. in Windows and Mac.  
+-> The deliverable is a jar file with functional endpoints that meet the systems specs.  
 
 
 *Done*
