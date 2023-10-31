@@ -13,6 +13,8 @@ with the required credentials to the local postgresql instance.
 
 -> The deliverable is a jar file with functional endpoints that meet the systems specs.  
 
+-> A summary of the classes can be seen below  
+![project classes](classes.png)  
 
 *Done*
 - Project structure  
