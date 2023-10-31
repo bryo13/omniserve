@@ -29,7 +29,7 @@ public class TasksService {
         }
 
         List<Tasks> tasks = new ArrayList<>();
-        tasksRepository.findAllTasksByUser(user_id);
+        tasks = tasksRepository.findAllTasksByUser(user_id);
 
         return new ResponseEntity<>(tasks, HttpStatus.OK);
 

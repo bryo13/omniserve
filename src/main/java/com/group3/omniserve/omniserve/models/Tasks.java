@@ -32,7 +32,14 @@ public class Tasks {
     private long taskID;
     private String title;
     private String description;
+    private float amount;
 
+    // we use int which we will cast into an object of type Duration and add to the createdAt 
+    // value 
+    private int durationInDays;
+
+    // additionalFiles is of type string as it will hold a url to the blobs holding files
+    // in line with file handling good practices.
     @Column(name = "additional_files")
     private String additionalFiles;
 
