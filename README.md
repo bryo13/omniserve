@@ -8,6 +8,9 @@ with the required credentials to the local postgresql instance.
 -> The application is a REST API following the MVC architecture written in spring boot version 3.1.4  
 -> If not used to maven and spring boot project file structure please use the `tree` command  
  in unix and unix-like systems or the alt. in Windows and Mac.  
+ The file layout should be as show below. Note I have ommited generated classes for brevity.  
+ ![project tree](tree.png)  
+
 -> The deliverable is a jar file with functional endpoints that meet the systems specs.  
 
 
