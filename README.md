@@ -7,10 +7,10 @@ with the required credentials to the local postgresql instance.
 -> All dependencies are help in the POM.xml file in the root directory.  
 -> The application is a REST API following the MVC architecture written in spring boot version 3.1.4  
 -> If not used to maven and spring boot project file structure please use the `tree` command  
- in unix like systems.
+ in unix and unix-like systems or the alt. in Windows and Mac.
 
 
-* Done *
+*Done*
 - Project structure  
 - USER CRUD    
 - Tasks CRUD  
@@ -18,7 +18,7 @@ with the required credentials to the local postgresql instance.
 - Wallet class
 - Wallet and User relationship
 
-* TODO * 
+*TODO* 
 - Transaction functionality  
 - Bid functionality  
 - User authentication  
