@@ -9,7 +9,7 @@ with the required credentials to the local postgresql instance.
 -> If not used to maven and spring boot project file structure please use the `tree` command  
  in unix and unix-like systems or the alt. in Windows and Mac.  
  The file layout should be as show below. Note I have ommited generated classes for brevity.  
- ![project tree](tree.png)  
+ ![project tree](tree.jpg)  
 
 -> The deliverable is a jar file with functional endpoints that meet the systems specs.  
 
