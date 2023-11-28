@@ -2,6 +2,7 @@ package com.group3.omniserve.omniserve.models;
 
 import java.sql.Timestamp;
 
+
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -13,10 +14,12 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Builder;
 import lombok.Setter;
 
 @Setter
 @Entity
+@Builder
 @Table(name = "users")
 public class User {
 
@@ -35,6 +38,10 @@ public class User {
 
     public String getEmail() {
         return email;
+    }
+
+        public Long getID() {
+        return userId;
     }
 
     public Timestamp getDateCreated() {

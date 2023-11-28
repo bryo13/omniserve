@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.group3.omniserve.omniserve.models.Tasks;
+import com.group3.omniserve.omniserve.services.TasksService;
 
 @RestController
 @RequestMapping("/api/v1")

@@ -1,4 +1,4 @@
-package com.group3.omniserve.omniserve.controller;
+package com.group3.omniserve.omniserve.services;
 
 import java.util.ArrayList;
 import java.util.List;

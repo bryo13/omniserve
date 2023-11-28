@@ -14,13 +14,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.group3.omniserve.omniserve.models.User;
+import com.group3.omniserve.omniserve.services.UsersService;
 
 @RestController
 @RequestMapping("/api/v1")
 public class UserController {
 
     @Autowired
-    private UserService userService;
+    private UsersService userService;
 
     @GetMapping("/users")
     public ResponseEntity<List<User>> getAllUsers() {

@@ -1,4 +1,4 @@
-package com.group3.omniserve.omniserve.controller;
+package com.group3.omniserve.omniserve.services;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,7 @@ import com.group3.omniserve.omniserve.models.User;
 import com.group3.omniserve.omniserve.repositories.UserRepository;
 
 @Service
-public class UserService {
+public class UsersService {
     @Autowired
     private UserRepository userRepository;
 
