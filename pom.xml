@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.1.5</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.group3</groupId>
+	<artifactId>omniserve</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>omniserve</name>
+	<description>Service Optimization Application</description>
+	<properties>
+		<java.version>17</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+               
+    <dependency>
+        <groupId>org.apache.tika</groupId>
+        <artifactId>tika-core</artifactId>
+        <version>1.27</version> <!-- Use the appropriate version -->
+    </dependency>
+
+
+	 <dependency>
+	  <groupId>org.glassfish</groupId>
+	  <artifactId>javax.persistence</artifactId>
+	  <version>10.0-b28</version>
+	  <type>jar</type>
+	 </dependency>
+	 <dependency>
+	  <groupId>win.doyto</groupId>
+	  <artifactId>doyto-query-api</artifactId>
+	  <version>1.0.2</version>
+	  <type>jar</type>
+	 </dependency>
+	 <dependency>
+	  <groupId>org.tallison.tika</groupId>
+	  <artifactId>tika-core-shaded</artifactId>
+	  <version>2.9.0.0</version>
+	  <type>jar</type>
+	 </dependency>
+	 <dependency>
+	  <groupId>za.co.absa.enceladus</groupId>
+	  <artifactId>spark-jobs</artifactId>
+	  <version>3.0.0</version>
+	  <type>jar</type>
+	 </dependency>
+	 <dependency>
+	  <groupId>org.springframework.security</groupId>
+	  <artifactId>spring-security-crypto</artifactId>
+	  <type>jar</type>
+	 </dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
